@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Test</h1>
+    <h1>Tree Folder<br>component that calls itself<br>INFINITELY<br>still he has children</h1>
     <button @click="isOpen = true">«Открыть»</button>
     <transition name="bounce">
       <ModalWindow :title="title" :folderTree="folderTree" v-if="isOpen"/>
@@ -30,19 +30,55 @@ export default {
           children: [
             {
               id: 11,
-              'name': 'Folder-A0',
-              'Folder-A0': [
+              name: 'Folder-A0',
+              children: [
                 {
                   id: 111,
-                  'name': 'Folder-A01',
-                  'name': 'Folder-A02',
-                  'name': 'Folder-A03',
+                  name: 'Folder-A01',
+                },
+                {
+                  id: 112,
+                  name: 'Folder-A02',
+                  children: [
+                    {
+                      id: 1120,
+                      name: 'Folder-A020'
+                    },
+                    {
+                      id: 1121,
+                      name: 'Folder-A021',
+                      children: [
+                        {
+                          id: 11210,
+                          name: 'Folder-A0210',
+                          children: [
+                            {
+                              id: 112100,
+                              name: 'Folder-A02100'
+                            },
+                            {
+                              id: 112101,
+                              name: 'Folder-A02101'
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 1122,
+                      name: 'Folder-A022'
+                    }
+                  ]
+                },
+                {
+                  id: 113,
+                  name: 'Folder-A03',
                 }
               ]
             },
             {
               id: 12,
-              'name': 'Folder-01',
+              name: 'Folder-01',
             }
           ]
         },
@@ -56,7 +92,7 @@ export default {
           children: [
             {
               id: 31,
-              'name': 'Folder-C0',
+              name: 'Folder-C0',
               children: [
                 {
                   id: 311,
@@ -65,13 +101,16 @@ export default {
                     {
                       id: 3111,
                       name: 'Folder-C000',
+                    },
+                    {
+                      id: 3112,
                       name: 'Folder-C001'
                     }
                   ]
                 },
               ],
               id: 32,
-              'name': 'Folder-C1',
+              name: 'Folder-C1',
               children: [
                 {
                   id: 321,
@@ -80,6 +119,9 @@ export default {
                     {
                       id: 3211,
                       name: 'Folder-C100',
+                    },
+                    {
+                      id: 3212,
                       name: 'Folder-C101'
                     }
                   ]

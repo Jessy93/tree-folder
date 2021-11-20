@@ -26,10 +26,9 @@ export default {
 <style scoped lang="scss">
   .main {
     max-width: 400px;
-    height: 400px;
+    height: auto;
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
     border: 1px solid #42b983;
