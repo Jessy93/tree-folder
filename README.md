@@ -1,4 +1,4 @@
-# tree-folder
+# tree-folders
 
 ## Project setup
 ```
