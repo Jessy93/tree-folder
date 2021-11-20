@@ -18,7 +18,7 @@ export default {
     ModalWindow
   },
   data: () => ({
-    title: "Заголовка",
+    title: "Click in green circle",
     isOpen: false,
   }),
   computed: {
