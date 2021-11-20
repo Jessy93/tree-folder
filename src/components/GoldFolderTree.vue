@@ -76,6 +76,9 @@ export default {
     border: 1px solid rebeccapurple;
     background-color: yellowgreen;
   }
+  span.folder:hover {
+    cursor: pointer;
+  }
   span.no-folder {
     background-color: red;
   }
